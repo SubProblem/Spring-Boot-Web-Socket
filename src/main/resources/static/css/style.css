@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+ul {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+li {
+    max-width: 200px;
+}
+
+ul li p {
+    max-width: 200px;
+}
+
+/* 
+    Primary Page 
+*/
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.primary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 300px;
+    margin: auto;
+    background: linear-gradient(to right, #002421, #0e6f6d, #00aeff);
+    border-radius: 7px;
+}
+
+.primary-container {
+    text-align: center;
+}
+
+.title {
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+}
+
+.primary-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.primary-input {
+    width: 200px;
+    border-radius: 7px;
+    border: none;
+    padding: 5px;
+    
+}
+
+.primary-input::placeholder {
+    text-align: center;
+    color: #999999; 
+    font-style: italic; 
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out; 
+}
+
+.primary-input:focus {
+    border: 2px solid black;
+    outline: none;
+}
+
+.primary-input:focus::placeholder {
+    color: transparent; 
+    transform: translateY(-100%); 
+  }
+
+.primary-btn {
+    margin-top: 5px;
+    width: 100px;
+    border-radius: 7px;
+    border: none;
+    padding: 7px;
+    cursor: pointer;
+}
+
+
+/* 
+    Chatroom Page
+*/
+
+.secondary {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    width: 700px;
+}
+
+.chat-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.connecting {
+    text-align: center;
+}
+.message-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.message-input {
+    width: 200px;
+}
+
+.send-btn {
+    margin-top: 5px;
+    width: 100px;
+}
+
+
+#message-space .my-message {
+    position: relative;
+    left: 70px;
+    
+}
+
+
+#message-space .other-message {
+    position: relative;
+    right: 70px;
+}
+
+
+#message-space .event-message {
+    position: relative;
+    font-size: 14px;
+}
+
